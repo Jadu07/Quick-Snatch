@@ -53,6 +53,7 @@ export default function SteelDiamondGame() {
     }
   }, [isMuted, bgAudio]);
 
+  // Play winning sound when game over
   useEffect(() => {
     if (gameOver) {
       const winAudio = new Audio(winSound);
