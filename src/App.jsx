@@ -53,7 +53,6 @@ export default function SteelDiamondGame() {
     }
   }, [isMuted, bgAudio]);
 
-  // Play winning sound when game over
   useEffect(() => {
     if (gameOver) {
       const winAudio = new Audio(winSound);
@@ -91,7 +90,7 @@ export default function SteelDiamondGame() {
       {!gameStarted ? (
         <div className="menu">
           <motion.h1 className="game-title" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
-            Quick Heist
+            Quick Snatch
           </motion.h1>
           <motion.h2 className="game-title" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
             "Blink and You Lose"
